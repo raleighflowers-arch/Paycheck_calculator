@@ -1,0 +1,11 @@
+number_of_hours_worked = int(input("enter hours worked: "))
+
+if number_of_hours_worked <= 40:
+    weekly_pay = number_of_hours_worked
+
+else:
+    overtime_hours = number_of_hours_worked - 40
+    overtime_pay = overtime_hours * 30
+    weekly_pay = (40 * 20) + overtime_pay
+
+print(weekly_pay)
